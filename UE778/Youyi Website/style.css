@@ -1,0 +1,13 @@
+/* --- Import Components stylesheets --- */
+@import url("components/container.css");
+@import url("components/button.css");
+
+
+
+h1{
+  font-family: Bangers;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 77px;
+}
