@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="banner" style="padding:20px 0px; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4))">
+    <view class="h1">头条</view>
+</view>
+<!-- toutiao STORY, add click response  -->
+<view wx:for="{{stories}}" wx:for-item="story" class="card-product">
+  <view class="card-product-infos">
+    <view class="h2" data-id="{{story.id}}" bindtap="showStory">{{story.content}}</view>
+    <view class="p" data-id="{{story.id}}" bindtap="showStory">{{story.name}}</view>
+  </view>
+</view>
+
+<!-- post new story button  -->
+  <view class="btn-area">
+    <button bindtap="newPage">Create New Story</button>
+  </view>
