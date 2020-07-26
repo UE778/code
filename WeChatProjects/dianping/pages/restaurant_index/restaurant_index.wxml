@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view>Discover your favourite restaurants</view>
+<view class="list">
+  <view wx:for="{{restaurants}}" wx:for-item="restaurant" class="card-product">
+    <view class="card-product-infos">
+      <view class="h1" bindtap="showRestaurant" data-id="{{restaurant.id}}">{{restaurant.name}}</view>
+      <view class ="h2">{{restaurant.description}} </view>
+    </view>
+  </view>
+</view>
+

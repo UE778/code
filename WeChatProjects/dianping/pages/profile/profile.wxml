@@ -1,0 +1,3 @@
+<!--pages/profile/profile.wxml-->
+<button type = "primary" open-type="getUserInfo" bindgetuserinfo="userInfoHandler">用户授权</button>
+
